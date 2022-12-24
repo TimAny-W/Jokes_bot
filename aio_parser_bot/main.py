@@ -14,7 +14,7 @@ list_of_jokes = list()
 @dp.message_handler(commands='start')
 async def start_message(message: types.Message):
     global list_of_jokes
-    await message.answer('IM BOT WHO CAN HELP U FIND JOKES', reply_markup=user_kb)
+    await message.answer('Я бот который расскажет тебе анекдот', reply_markup=user_kb)
     list_of_jokes = await run_tasks()
     print(list_of_jokes)
 
